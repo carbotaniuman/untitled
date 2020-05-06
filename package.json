@@ -1,0 +1,33 @@
+{
+  "name": "vue-color",
+  "version": "0.1.0",
+  "module": "dist/vue-color.min.mjs",
+  "private": true,
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup -c"
+  },
+  "dependencies": {
+    "clamp": "^1.0.1",
+    "lodash.throttle": "^4.0.0",
+    "material-colors": "^1.0.0",
+    "tinycolor2": "^1.1.2"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-html": "^0.1.1",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "cross-env": "^7.0.2",
+    "rollup": "^2.3.2",
+    "rollup-plugin-bundle-size": "^1.0.3",
+    "rollup-plugin-inject-process-env": "^1.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-vue": "^5.1.6",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "sideEffects": [
+    "*.css"
+  ]
+}
